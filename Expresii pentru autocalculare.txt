@@ -1,0 +1,13 @@
+[dec_table1_row_r103c1]+[dec_table1_row_r102c1]=[dec_table1_row_r101c1]msg(Error);
+[dec_table1_row_r103c2]+[dec_table1_row_r102c2]=[dec_table1_row_r101c2]msg(Error);
+[dec_table1_row_r103c3]+[dec_table1_row_r102c3]=[dec_table1_row_r101c3]msg(Error);
+[dec_table1_row_r103c4]+[dec_table1_row_r102c4]=[dec_table1_row_r101c4]msg(Error);
+[dec_table1_row_r103c5]+[dec_table1_row_r102c5]=[dec_table1_row_r101c5]msg(Error);
+[dec_table1_row_r103c6]+[dec_table1_row_r102c6]=[dec_table1_row_r101c6]msg(Error);
+
+sum([&dec_dinamicTable_row_c1])=[dec_table1_row_r103c1]msg(Suma Cap. 1 coloana 1 nu este corecta);
+sum([&dec_dinamicTable_row_c2])=[dec_table1_row_r103c2]msg(Suma Cap. 1 coloana 2 nu este corecta);
+sum([&dec_dinamicTable_row_c3])=[dec_table1_row_r103c3]msg(Suma Cap. 1 coloana 3 nu este corecta);
+sum([&dec_dinamicTable_row_c4])=[dec_table1_row_r103c4]msg(Suma Cap. 1 coloana 4 nu este corecta);
+sum([&dec_dinamicTable_row_c5])=[dec_table1_row_r103c5]msg(Suma Cap. 1 coloana 5 nu este corecta);
+sum([&dec_dinamicTable_row_c6])=[dec_table1_row_r103c6]msg(Suma Cap. 1 coloana 6 nu este corecta);
