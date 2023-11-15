@@ -138,237 +138,238 @@ webform.validators.bsc1_24 = function (v, allowOverpass) {
             }
 
             /*19-201. Rind.200 Col1 * numarul de zile in luna de raport ≥  Rind.210 Col1*/
+          
             var zileLuna1 = 0;
-            if (!isNaN(parseInt(values['dec_table2_row_r230c1']))) {
-                zileLuna1 = parseInt(values['dec_table2_row_r230c1']);
-            }
+            // if (!isNaN(parseInt(values['dec_table2_row_r230c1']))) {
+            //     zileLuna1 = parseInt(values['dec_table2_row_r230c1']);
+            // }
             var zileLuna2 = 0;
-            if (!isNaN(parseInt(values['dec_table2_row_r230c2']))) {
-                zileLuna2 = parseInt(values['dec_table2_row_r230c2']);
-            }
+            // if (!isNaN(parseInt(values['dec_table2_row_r230c2']))) {
+            //     zileLuna2 = parseInt(values['dec_table2_row_r230c2']);
+            // }
             var zileLuna3 = 0;
-            if (!isNaN(parseInt(values['dec_table2_row_r230c3']))) {
-                zileLuna3 = parseInt(values['dec_table2_row_r230c3']);
-            }
+            // if (!isNaN(parseInt(values['dec_table2_row_r230c3']))) {
+            //     zileLuna3 = parseInt(values['dec_table2_row_r230c3']);
+            // }
 
-            if ((values.dec_table2_row_r200c1 !== '' && parseInt(values.dec_table2_row_r200c1) >= 0) && (values.dec_table2_row_r210c1 !== '' && parseInt(values.dec_table2_row_r210c1) >= 0)) {
-                if ((parseInt(values.dec_table2_row_r200c1) * zileLuna1) < parseInt(values.dec_table2_row_r210c1)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r200c1',
-                        'weight': 201,
-                        'msg': Drupal.t('Cod eroare: 19-201. Rind.200 Col1 * numarul de zile in luna de raport ≥ Rind.210 Col1')
-                    });
-                }
-            }
+            // if ((values.dec_table2_row_r200c1 !== '' && parseInt(values.dec_table2_row_r200c1) >= 0) && (values.dec_table2_row_r210c1 !== '' && parseInt(values.dec_table2_row_r210c1) >= 0)) {
+            //     if ((parseInt(values.dec_table2_row_r200c1) * zileLuna1) < parseInt(values.dec_table2_row_r210c1)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r200c1',
+            //             'weight': 201,
+            //             'msg': Drupal.t('Cod eroare: 19-201. Rind.200 Col1 * numarul de zile in luna de raport ≥ Rind.210 Col1')
+            //         });
+            //     }
+            // }
 
-            if ((values.dec_table2_row_r200c1 == '' || parseInt(values.dec_table2_row_r200c1) == 0) && (values.dec_table2_row_r210c1 != '' && parseInt(values.dec_table2_row_r210c1) >= 0)) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r200c1',
-                    'weight': 201,
-                    'msg': Drupal.t('Cod eroare: 19-201. Rind.200 Col1 * numarul de zile in luna de raport ≥  Rind.210 Col1')
-                });
-            }
+            // if ((values.dec_table2_row_r200c1 == '' || parseInt(values.dec_table2_row_r200c1) == 0) && (values.dec_table2_row_r210c1 != '' && parseInt(values.dec_table2_row_r210c1) >= 0)) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r200c1',
+            //         'weight': 201,
+            //         'msg': Drupal.t('Cod eroare: 19-201. Rind.200 Col1 * numarul de zile in luna de raport ≥  Rind.210 Col1')
+            //     });
+            // }
 
             /*19-202. Rind.200 Col2 * numarul de zile in luna de raport  ≥  Rind.210 Col2 */
-            if ((values.dec_table2_row_r200c2 != '' && parseInt(values.dec_table2_row_r200c2) >= 0) && (values.dec_table2_row_r210c2 != '' && parseInt(values.dec_table2_row_r210c2) >= 0)) {
-                if ((parseInt(values.dec_table2_row_r200c2) * zileLuna2) < parseInt(values.dec_table2_row_r210c2)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r200c2',
-                        'weight': 202,
-                        'msg': Drupal.t('Cod eroare: 19-202. Rind.200 Col2 * numarul de zile in luna de raport ≥ Rind.210 Col2')
-                    });
-                }
-            }
+            // if ((values.dec_table2_row_r200c2 != '' && parseInt(values.dec_table2_row_r200c2) >= 0) && (values.dec_table2_row_r210c2 != '' && parseInt(values.dec_table2_row_r210c2) >= 0)) {
+            //     if ((parseInt(values.dec_table2_row_r200c2) * zileLuna2) < parseInt(values.dec_table2_row_r210c2)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r200c2',
+            //             'weight': 202,
+            //             'msg': Drupal.t('Cod eroare: 19-202. Rind.200 Col2 * numarul de zile in luna de raport ≥ Rind.210 Col2')
+            //         });
+            //     }
+            // }
 
-            if ((values.dec_table2_row_r200c2 == '' || parseInt(values.dec_table2_row_r200c2) == 0) && (values.dec_table2_row_r210c2 != '' && parseInt(values.dec_table2_row_r210c2) >= 0)) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r200c2',
-                    'weight': 202,
-                    'msg': Drupal.t('Cod eroare: 19-202. Rind.200 Col2 * numarul de zile in luna de raport ≥ Rind.210 Col2')
-                });
-            }
+            // if ((values.dec_table2_row_r200c2 == '' || parseInt(values.dec_table2_row_r200c2) == 0) && (values.dec_table2_row_r210c2 != '' && parseInt(values.dec_table2_row_r210c2) >= 0)) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r200c2',
+            //         'weight': 202,
+            //         'msg': Drupal.t('Cod eroare: 19-202. Rind.200 Col2 * numarul de zile in luna de raport ≥ Rind.210 Col2')
+            //     });
+            // }
 
             /*19-203. Rind.200 Col3 * numarul de zile in luna de raport  ≥  Rind.210 Col2 */
-            if ((values.dec_table2_row_r200c3 != '' && parseFloat(values.dec_table2_row_r200c3) >= 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
-                if ((parseFloat(values.dec_table2_row_r200c3) * zileLuna3) < parseFloat(values.dec_table2_row_r210c3)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r200c3',
-                        'weight': 203,
-                        'msg': Drupal.t('Cod eroare: 19-203. Rind.200 Col3 * numarul de zile in luna de raport ≥ Rind.210 Col3')
-                    });
-                }
-            }
+            // if ((values.dec_table2_row_r200c3 != '' && parseFloat(values.dec_table2_row_r200c3) >= 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
+            //     if ((parseFloat(values.dec_table2_row_r200c3) * zileLuna3) < parseFloat(values.dec_table2_row_r210c3)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r200c3',
+            //             'weight': 203,
+            //             'msg': Drupal.t('Cod eroare: 19-203. Rind.200 Col3 * numarul de zile in luna de raport ≥ Rind.210 Col3')
+            //         });
+            //     }
+            // }
 
-            if ((values.dec_table2_row_r200c3 == '' || parseFloat(values.dec_table2_row_r200c3) == 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r200c3',
-                    'weight': 203,
-                    'msg': Drupal.t('Cod eroare: 19-203. Rind.200 Col3 * numarul de zile in luna de raport ≥ Rind.210 Col3')
-                });
-            }
+            // if ((values.dec_table2_row_r200c3 == '' || parseFloat(values.dec_table2_row_r200c3) == 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r200c3',
+            //         'weight': 203,
+            //         'msg': Drupal.t('Cod eroare: 19-203. Rind.200 Col3 * numarul de zile in luna de raport ≥ Rind.210 Col3')
+            //     });
+            // }
 
             /*******************************************************************/
             /*19-2010. Rind.2001 Col1 * numarul de zile in luna de raport ≥  Rind.210 Col1*/
-            if ((values.dec_table2_row_r2001c1 != '' && parseFloat(values.dec_table2_row_r2001c1) >= 0) && (values.dec_table2_row_r210c1 != '' && parseFloat(values.dec_table2_row_r210c1) >= 0)) {
-                if ((parseFloat(values.dec_table2_row_r2001c1) * zileLuna1) < parseFloat(values.dec_table2_row_r210c1)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r2001c1',
-                        'weight': 2010,
-                        'msg': Drupal.t('Cod eroare: 19-2010. Rind.2001 Col1 * numarul de zile in luna de raport ≥ Rind.210 Col1')
-                    });
-                }
-            }
+            // if ((values.dec_table2_row_r2001c1 != '' && parseFloat(values.dec_table2_row_r2001c1) >= 0) && (values.dec_table2_row_r210c1 != '' && parseFloat(values.dec_table2_row_r210c1) >= 0)) {
+            //     if ((parseFloat(values.dec_table2_row_r2001c1) * zileLuna1) < parseFloat(values.dec_table2_row_r210c1)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r2001c1',
+            //             'weight': 2010,
+            //             'msg': Drupal.t('Cod eroare: 19-2010. Rind.2001 Col1 * numarul de zile in luna de raport ≥ Rind.210 Col1')
+            //         });
+            //     }
+            // }
 
-            if ((values.dec_table2_row_r2001c1 == '' || parseFloat(values.dec_table2_row_r2001c1) == 0) && (values.dec_table2_row_r210c1 != '' && parseFloat(values.dec_table2_row_r210c1) >= 0)) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2001c1',
-                    'weight': 2010,
-                    'msg': Drupal.t('Cod eroare: 19-2010. Rind.2001 Col1 * numarul de zile in luna de raport ≥ Rind.210 Col1')
-                });
-            }
+            // if ((values.dec_table2_row_r2001c1 == '' || parseFloat(values.dec_table2_row_r2001c1) == 0) && (values.dec_table2_row_r210c1 != '' && parseFloat(values.dec_table2_row_r210c1) >= 0)) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2001c1',
+            //         'weight': 2010,
+            //         'msg': Drupal.t('Cod eroare: 19-2010. Rind.2001 Col1 * numarul de zile in luna de raport ≥ Rind.210 Col1')
+            //     });
+            // }
 
             /*19-2011. Rind.2001 Col2 * numarul de zile in luna de raport  ≥  Rind.210 Col2 */
-            if ((values.dec_table2_row_r2001c2 != '' && parseFloat(values.dec_table2_row_r2001c2) >= 0) && (values.dec_table2_row_r210c2 != '' && parseFloat(values.dec_table2_row_r210c2) >= 0)) {
-                if ((parseFloat(values.dec_table2_row_r2001c2) * zileLuna2) < parseFloat(values.dec_table2_row_r210c2)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r2001c2',
-                        'weight': 2011,
-                        'msg': Drupal.t('Cod eroare: 19-2011. Rind.2001 Col2 * numarul de zile in luna de raport ≥ Rind.210 Col2')
-                    });
-                }
-            }
+            // if ((values.dec_table2_row_r2001c2 != '' && parseFloat(values.dec_table2_row_r2001c2) >= 0) && (values.dec_table2_row_r210c2 != '' && parseFloat(values.dec_table2_row_r210c2) >= 0)) {
+            //     if ((parseFloat(values.dec_table2_row_r2001c2) * zileLuna2) < parseFloat(values.dec_table2_row_r210c2)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r2001c2',
+            //             'weight': 2011,
+            //             'msg': Drupal.t('Cod eroare: 19-2011. Rind.2001 Col2 * numarul de zile in luna de raport ≥ Rind.210 Col2')
+            //         });
+            //     }
+            // }
 
-            if ((values.dec_table2_row_r2001c2 == '' || parseFloat(values.dec_table2_row_r2001c2) == 0) && (values.dec_table2_row_r210c2 != '' && parseFloat(values.dec_table2_row_r210c2) >= 0)) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2001c2',
-                    'weight': 2011,
-                    'msg': Drupal.t('Cod eroare: 19-2011. Rind.2001 Col2 * numarul de zile in luna de raport ≥  Rind.210 Col2')
-                });
-            }
+            // if ((values.dec_table2_row_r2001c2 == '' || parseFloat(values.dec_table2_row_r2001c2) == 0) && (values.dec_table2_row_r210c2 != '' && parseFloat(values.dec_table2_row_r210c2) >= 0)) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2001c2',
+            //         'weight': 2011,
+            //         'msg': Drupal.t('Cod eroare: 19-2011. Rind.2001 Col2 * numarul de zile in luna de raport ≥  Rind.210 Col2')
+            //     });
+            // }
 
             /*19-2012. Rind.2003 Col3 * numarul de zile in luna de raport  ≥  Rind.210 Col2 */
-            if ((values.dec_table2_row_r2001c3 != '' && parseFloat(values.dec_table2_row_r2001c3) >= 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
-                if ((parseFloat(values.dec_table2_row_r2001c3) * zileLuna3) < parseFloat(values.dec_table2_row_r210c3)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r2001c3',
-                        'weight': 2012,
-                        'msg': Drupal.t('Cod eroare: 19-2012. Rind.2001 Col3 * numarul de zile in luna de raport ≥  Rind.210 Col3')
-                    });
-                }
-            }
+            // if ((values.dec_table2_row_r2001c3 != '' && parseFloat(values.dec_table2_row_r2001c3) >= 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
+            //     if ((parseFloat(values.dec_table2_row_r2001c3) * zileLuna3) < parseFloat(values.dec_table2_row_r210c3)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r2001c3',
+            //             'weight': 2012,
+            //             'msg': Drupal.t('Cod eroare: 19-2012. Rind.2001 Col3 * numarul de zile in luna de raport ≥  Rind.210 Col3')
+            //         });
+            //     }
+            // }
 
-            if ((values.dec_table2_row_r2001c3 == '' || parseFloat(values.dec_table2_row_r2001c3) == 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2001c3',
-                    'weight': 2012,
-                    'msg': Drupal.t('Cod eroare: 19-2012. Rind.2001 Col3 * numarul de zile in luna de raport ≥ Rind.210 Col3')
-                });
-            }
+            // if ((values.dec_table2_row_r2001c3 == '' || parseFloat(values.dec_table2_row_r2001c3) == 0) && (values.dec_table2_row_r210c3 != '' && parseFloat(values.dec_table2_row_r210c3) >= 0)) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2001c3',
+            //         'weight': 2012,
+            //         'msg': Drupal.t('Cod eroare: 19-2012. Rind.2001 Col3 * numarul de zile in luna de raport ≥ Rind.210 Col3')
+            //     });
+            // }
 
             /*******************************************************************/
             /*19-204. Rînd 230 ≤ numărul de zile în luna de raport Col1 */
-            if (values.dec_table2_row_r230c1 != '' && parseFloat(values.dec_table2_row_r230c1) >= 0) {
-                if (parseInt(values.dec_table2_row_r230c1) > daysInMonth(luna1, DecYear)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r230c1',
-                        'weight': 204,
-                        'msg': Drupal.t('Cod eroare: 19-204. Rînd 230 ≤ numărul de zile în luna de raport Col1')
-                    });
-                }
-            }
+            // if (values.dec_table2_row_r230c1 != '' && parseFloat(values.dec_table2_row_r230c1) >= 0) {
+            //     if (parseInt(values.dec_table2_row_r230c1) > daysInMonth(luna1, DecYear)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r230c1',
+            //             'weight': 204,
+            //             'msg': Drupal.t('Cod eroare: 19-204. Rînd 230 ≤ numărul de zile în luna de raport Col1')
+            //         });
+            //     }
+            // }
 
             /*19-204. Rînd 230 ≤ numărul de zile în luna de raport Col2 */
-            if (values.dec_table2_row_r230c2 != '' && parseFloat(values.dec_table2_row_r230c2) >= 0) {
-                if (parseFloat(values.dec_table2_row_r230c2) > daysInMonth(luna2, DecYear)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r230c2',
-                        'weight': 204,
-                        'msg': Drupal.t('Cod eroare: 19-204. Rînd 230 ≤ numărul de zile în luna de raport Col2')
-                    });
-                }
-            }
+            // if (values.dec_table2_row_r230c2 != '' && parseFloat(values.dec_table2_row_r230c2) >= 0) {
+            //     if (parseFloat(values.dec_table2_row_r230c2) > daysInMonth(luna2, DecYear)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r230c2',
+            //             'weight': 204,
+            //             'msg': Drupal.t('Cod eroare: 19-204. Rînd 230 ≤ numărul de zile în luna de raport Col2')
+            //         });
+            //     }
+            // }
 
             /*19-204. Rînd 230 ≤ numărul de zile în luna de raport Col3 */
-            if (values.dec_table2_row_r230c3 != '' && parseInt(values.dec_table2_row_r230c3) >= 0) {
-                if (parseFloat(values.dec_table2_row_r230c3) > daysInMonth(luna3, DecYear)) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r230c3',
-                        'weight': 204,
-                        'msg': Drupal.t('Cod eroare: 19-204. Rînd 230 ≤ numărul de zile în luna de raport Col3')
-                    });
-                }
-            }
+            // if (values.dec_table2_row_r230c3 != '' && parseInt(values.dec_table2_row_r230c3) >= 0) {
+            //     if (parseFloat(values.dec_table2_row_r230c3) > daysInMonth(luna3, DecYear)) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r230c3',
+            //             'weight': 204,
+            //             'msg': Drupal.t('Cod eroare: 19-204. Rînd 230 ≤ numărul de zile în luna de raport Col3')
+            //         });
+            //     }
+            // }
 
             /*19-205. Rînd 230 ≤ numărul de zile în luna de raport Col3 */
             var var240 = 0;
-            if (!isNaN(parseInt(values['dec_table1_row_r240']))) {
-                var240 = parseInt(values['dec_table1_row_r240']);
-            }
+            // if (!isNaN(parseInt(values['dec_table1_row_r240']))) {
+            //     var240 = parseInt(values['dec_table1_row_r240']);
+            // }
             var var250 = 0;
-            if (!isNaN(parseInt(values['dec_table1_row_r250']))) {
-                var250 = parseInt(values['dec_table1_row_r250']);
-            }
+            // if (!isNaN(parseInt(values['dec_table1_row_r250']))) {
+            //     var250 = parseInt(values['dec_table1_row_r250']);
+            // }
 
-            if (var240 < var250) {
-                webform.errors.push({
-                    'fieldName': 'dec_table1_row_r250',
-                    'weight': 205,
-                    'msg': Drupal.t('Cod eroare: 19-205. Rînd 240 ≥ Rînd 250')
-                });
-            }
+            // if (var240 < var250) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table1_row_r250',
+            //         'weight': 205,
+            //         'msg': Drupal.t('Cod eroare: 19-205. Rînd 240 ≥ Rînd 250')
+            //     });
+            // }
 
             /*******************************************************************/
 
-            if (
-                (values.dec_table2_row_r200c1 !== '' && parseFloat(values.dec_table2_row_r200c1) >= 0) &&
-                (values.dec_table2_row_r210c1 !== '' && parseFloat(values.dec_table2_row_r210c1) >= 0) &&
-                (values.dec_table2_row_r230c1 !== '' && parseFloat(values.dec_table2_row_r230c1) >= 0)
-            ) {
-                if (
-                    (parseFloat(values.dec_table2_row_r210c1) / (parseFloat(values.dec_table2_row_r200c1) * parseFloat(values.dec_table2_row_r230c1))) >
-                    daysInMonth(luna1, DecYear)
-                ) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r200c1',
-                        'weight': 206,
-                        'msg': Drupal.t('Cod eroare: 19-206. Rînd 210 col.1 / (Rînd 200 * Rînd 230) ≤ numărul de zile în luna de raport')
-                    });
-                }
-            }
+            // if (
+            //     (values.dec_table2_row_r200c1 !== '' && parseFloat(values.dec_table2_row_r200c1) >= 0) &&
+            //     (values.dec_table2_row_r210c1 !== '' && parseFloat(values.dec_table2_row_r210c1) >= 0) &&
+            //     (values.dec_table2_row_r230c1 !== '' && parseFloat(values.dec_table2_row_r230c1) >= 0)
+            // ) {
+            //     if (
+            //         (parseFloat(values.dec_table2_row_r210c1) / (parseFloat(values.dec_table2_row_r200c1) * parseFloat(values.dec_table2_row_r230c1))) >
+            //         daysInMonth(luna1, DecYear)
+            //     ) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r200c1',
+            //             'weight': 206,
+            //             'msg': Drupal.t('Cod eroare: 19-206. Rînd 210 col.1 / (Rînd 200 * Rînd 230) ≤ numărul de zile în luna de raport')
+            //         });
+            //     }
+            // }
 
-            if (
-                (values.dec_table2_row_r200c2 !== '' && parseFloat(values.dec_table2_row_r200c2) >= 0) &&
-                (values.dec_table2_row_r210c2 !== '' && parseFloat(values.dec_table2_row_r210c2) >= 0) &&
-                (values.dec_table2_row_r230c2 !== '' && parseFloat(values.dec_table2_row_r230c2) >= 0)
-            ) {
-                if (
-                    (parseFloat(values.dec_table2_row_r210c2) / (parseFloat(values.dec_table2_row_r200c2) * parseFloat(values.dec_table2_row_r230c2))) >
-                    daysInMonth(luna2, DecYear)
-                ) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r200c2',
-                        'weight': 207,
-                        'msg': Drupal.t('Cod eroare: 19-207. Rînd 210 col.2 / (Rînd 200 * Rînd 230) ≤ numărul de zile în luna de raport')
-                    });
-                }
-            }
+            // if (
+            //     (values.dec_table2_row_r200c2 !== '' && parseFloat(values.dec_table2_row_r200c2) >= 0) &&
+            //     (values.dec_table2_row_r210c2 !== '' && parseFloat(values.dec_table2_row_r210c2) >= 0) &&
+            //     (values.dec_table2_row_r230c2 !== '' && parseFloat(values.dec_table2_row_r230c2) >= 0)
+            // ) {
+            //     if (
+            //         (parseFloat(values.dec_table2_row_r210c2) / (parseFloat(values.dec_table2_row_r200c2) * parseFloat(values.dec_table2_row_r230c2))) >
+            //         daysInMonth(luna2, DecYear)
+            //     ) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r200c2',
+            //             'weight': 207,
+            //             'msg': Drupal.t('Cod eroare: 19-207. Rînd 210 col.2 / (Rînd 200 * Rînd 230) ≤ numărul de zile în luna de raport')
+            //         });
+            //     }
+            // }
 
-            if (
-                (values.dec_table2_row_r200c3 !== '' && parseFloat(values.dec_table2_row_r200c3) >= 0) &&
-                (values.dec_table2_row_r210c3 !== '' && parseFloat(values.dec_table2_row_r210c3) >= 0) &&
-                (values.dec_table2_row_r230c3 !== '' && parseFloat(values.dec_table2_row_r230c3) >= 0)
-            ) {
-                if (
-                    (parseFloat(values.dec_table2_row_r210c3) / (parseFloat(values.dec_table2_row_r200c3) * parseFloat(values.dec_table2_row_r230c3))) >
-                    daysInMonth(luna3, DecYear)
-                ) {
-                    webform.errors.push({
-                        'fieldName': 'dec_table2_row_r200c3',
-                        'weight': 208,
-                        'msg': Drupal.t('Cod eroare: 19-208. Rînd 210 col.3 / (Rînd 200 * Rînd 230) ≤ numărul de zile în luna de raport')
-                    });
-                }
-            }
+            // if (
+            //     (values.dec_table2_row_r200c3 !== '' && parseFloat(values.dec_table2_row_r200c3) >= 0) &&
+            //     (values.dec_table2_row_r210c3 !== '' && parseFloat(values.dec_table2_row_r210c3) >= 0) &&
+            //     (values.dec_table2_row_r230c3 !== '' && parseFloat(values.dec_table2_row_r230c3) >= 0)
+            // ) {
+            //     if (
+            //         (parseFloat(values.dec_table2_row_r210c3) / (parseFloat(values.dec_table2_row_r200c3) * parseFloat(values.dec_table2_row_r230c3))) >
+            //         daysInMonth(luna3, DecYear)
+            //     ) {
+            //         webform.errors.push({
+            //             'fieldName': 'dec_table2_row_r200c3',
+            //             'weight': 208,
+            //             'msg': Drupal.t('Cod eroare: 19-208. Rînd 210 col.3 / (Rînd 200 * Rînd 230) ≤ numărul de zile în luna de raport')
+            //         });
+            //     }
+            // }
 
             var var220C1 = 0;
             if (!isNaN(parseInt(values['dec_table2_row_r220c1']))) {
