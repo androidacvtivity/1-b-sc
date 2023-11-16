@@ -1,0 +1,593 @@
+
+
+<h3 align="center">["1-B-SC"]</h3>
+<h3 align="center">["Raport statistic trimestrial"]</h3>
+<h3 align="center">["Cazarea turiştilor în structurile de primire turistică colective cu funcţiuni de cazare"]</h3>
+<p align="center">
+    @nalogPeriodType;@nalogPeriodLetter;T/@nalogPeriodQuarter;/@nalogPeriodYear;
+</p>
+<h3>["BIROUL NAŢIONAL DE STATISTICĂ"]</h3>
+<br>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Date de identificare"]: </span>
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Adresa agentului, cînd diferă de cea a structurii"]:</span>
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Denumirea structurii de cazare"]:</span> @dec_fiscCod_nameDifferent;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Raionul(municipiul)"]:</span>@dec_fiscCod_fiscDifferent;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod CUATM"]:</span> @dec_fiscCod_codCUATMDifferent;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Sat(comuna/sector)"]:</span>@dec_fiscCod_cuatmDifferent;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Strada"]:</span>@dec_group2_adresDifferent;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Denumirea"]:</span> @dec_fiscCod_name;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Adresa"]:</span>
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Raionul(municipiul)"]:</span>@dec_fiscCod_fisc;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Sat(comuna/sector)"]:</span>@dec_fiscCod_cuatm;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Strada"]:</span>@dec_group2_adres;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod CUIÎO"]:</span> @dec_fiscCod_cuio;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod IDNO"]:</span>@dec_fiscCod_fiscal;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Codul fiscal"]:</span>@dec_fiscCod_codFiscal;
+</p>
+<div class="webform-padding-sm webform-select2-inline">
+    <span class="webform-bold webform-right-sm">["Forma de proprietate"]:</span>@dec_fiscCod_cfp;
+</div>
+<div class="webform-padding-sm webform-select2-inline">
+    <span class="webform-bold webform-right-sm">["Forma organizatorico-juridică"]:</span>@dec_fiscCod_cfoj;
+</div>
+<div class="webform-padding-sm webform-select2-inline">
+    <span class="webform-bold webform-right-sm">["Activitatea principală"]:</span>@dec_fiscCod_caem;
+</div>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Conducătorul"]:</span>@dec_director_director;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Executantul"]:</span> @dec_table_row_anexeint;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Telefon"]:</span>@dec_fiscCod_telefon;
+</p>
+<p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Tipuri de structuri de cazare"]:</span>
+    @dec_table_row_tsc;</p>
+<p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Categoria structurii de cazare"]:</span>
+    @dec_table_row_csc;</p>
+<div id="differet-address" style="display: none;">
+    <p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Raionul (municipiul)"]:</span>
+        @dec_table_row_raion;</p>
+    <p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Cod CUATM"]:</span>
+        @dec_table_row_codcuatm;</p>
+    <p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Satul (comuna)"]:</span>
+        @dec_table_row_satul;</p>
+    <p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["Strada"]:</span> @dec_table_row_strada;
+    </p>
+    <p class="webform-padding-sm"><span class="webform-bold webform-right-sm">["nr."]:</span>
+        @dec_table_row_stradanumber;</p>
+</div>
+<br />
+
+
+
+<h3 align="center">["Cap. 1 Numărul de sosiri şi înnoptări ale vizitatorilor (turiştilor)"]</h3>
+<div id="dinamicTable" grid-min-index="104">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con" border="1" class="grid">
+        <thead>
+            <tr>
+                <td width="47" rowspan="2">
+                    <p align="center">
+                        ["Nr. rînd"]
+                    </p>
+                </td>
+                <td width="285" rowspan="2">
+                    <p align="center">
+                        ["Ţara de reşedinţă (domiciliu) a vizitatorilor"]
+                    </p>
+                </td>
+                <td width="70" rowspan="2">
+                    <p align="center">
+                        ["Cod"]
+                    </p>
+                    <p align="center">
+                        ["ţară"]
+                    </p>
+                </td>
+                <td width="204" colspan="2">
+                    <h3 align="center">
+                        ["Prima lună a trimestrului raportat"]
+                    </h3>
+                </td>
+                <td width="207" colspan="2">
+                    <h3 align="center">
+                        ["A doua lună a trimestrului raportat"]
+                    </h3>
+                </td>
+                <td width="211" colspan="2">
+                    <h3 align="center">
+                        ["A treia lună a trimestrului raportat"]
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="104">
+                    <p align="center">
+                        ["număr sosiri"]
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        ["număr înnoptări"]
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        ["număr sosiri"]
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        ["număr înnoptări"]
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        ["număr sosiri"]
+                    </p>
+                </td>
+                <td width="104">
+                    <p align="center">
+                        ["număr înnoptări"]
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        A
+                    </p>
+                </td>
+                <td width="285">
+                    <p align="center">
+                        B
+                    </p>
+                </td>
+                <td width="70">
+                    <p align="center">
+                        C
+                    </p>
+                </td>
+                <td width="104">
+                    <p align="center">
+                        1
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        2
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        3
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        4
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        5
+                    </p>
+                </td>
+                <td width="104">
+                    <p align="center">
+                        6
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        101
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        Total (102+103)
+                    </p>
+                </td>
+                <td width="70">
+                    <p align="center">
+                        000
+                    </p>
+                </td>
+                <td width="104">
+                    @dec_table1_row_r101c1;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r101c2;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r101c3;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r101c4;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r101c5;
+                </td>
+                <td width="104">
+                    @dec_table1_row_r101c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        102
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Vizitatori-rezidenţi în Republica Moldova"]
+                    </p>
+                </td>
+                <td width="70">
+                    <p align="center">
+                        498
+                    </p>
+                </td>
+                <td width="104">
+                    @dec_table1_row_r102c1;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r102c2;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r102c3;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r102c4;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r102c5;
+                </td>
+                <td width="104">
+                    @dec_table1_row_r102c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        103
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Vizitatori nerezidenţi – total"](110+111+...+166)
+                    </p>
+                </td>
+                <td width="70">
+                    <p align="center">
+                        999
+                    </p>
+                </td>
+                <td width="104">
+                    @dec_table1_row_r103c1;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r103c2;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r103c3;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r103c4;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r103c5;
+                </td>
+                <td width="104">
+                    @dec_table1_row_r103c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="8" width="285">
+                    <p>
+                        ["din ţările"]:
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable_row_c5;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <strong>["Informativ"]</strong>: ["Numărul de sosiri ale vizitatorilor (turiştilor) conform voucherelor turistice în
+    trimestrul raportat"]
+</p>
+<p>(170) ["Total"] @dec_table1_row_r170; (180) ["din care, sosiri ale nerezidenţilor"] @dec_table1_row_r180;</p>
+<br />
+<h3 align="center">["Cap. 2 Capacitatea structurii de cazare"]</h3>
+<div align="center">
+    <table id="cap2" border="1" cellspacing="0" cellpadding="0" width="100%">
+        <thead>
+            <tr>
+                <td width="48">
+                    <p>
+                        ["Nr. rînd"]
+                    </p>
+                </td>
+                <td width="288">
+                    <p align="center">
+                        ["Denumirea indicatorilor"]
+                    </p>
+                </td>
+                <td width="144">
+                    <p align="center">
+                        ["Prima lună a trimestrului raportat"]
+                    </p>
+                </td>
+                <td width="144">
+                    <p align="center">
+                        ["A doua lună a trimestrului raportat"]
+                    </p>
+                </td>
+                <td width="144">
+                    <p align="center">
+                        ["A treia lună a trimestrului raportat"]
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        A
+                    </p>
+                </td>
+                <td width="288">
+                    <p align="center">
+                        B
+                    </p>
+                </td>
+                <td width="144">
+                    <p align="center">
+                        1
+                    </p>
+                </td>
+                <td width="144">
+                    <p align="center">
+                        2
+                    </p>
+                </td>
+                <td width="144">
+                    <p align="center">
+                        3
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        2001
+                    </p>
+                </td>
+                <td width="288">
+                    <p>
+                        ["Numărul de camere existente în prima zi a lunii"]
+                    </p>
+                </td>
+                <td width="144">
+                    @dec_table2_row_r2001c1;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r2001c2;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r2001c3;
+                </td>
+            </tr>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        2002
+                    </p>
+                </td>
+                <td width="288">
+                    <p>
+                        ["Numărul de locuri-pat în prima zi a lunii"]
+                    </p>
+                </td>
+                <td width="144">
+                    @dec_table2_row_r2002c1;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r2002c2;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r2002c3;
+                </td>
+            </tr>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        200
+                    </p>
+                </td>
+                <td width="288">
+                    <p>
+                        ["Numărul de camere oferite pentru cazare (dacă nu s-a oferit în întregime capacitatea
+                        structurii indicaţi numărul mediu-vezi ex. nr.2)"]
+                    </p>
+                </td>
+                <td width="144">
+                    @dec_table2_row_r200c1;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r200c2;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r200c3;
+                </td>
+            </tr>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        210
+                    </p>
+                </td>
+                <td width="288">
+                    <p>
+                        ["Numărul de camere-zile efectiv oferite (ocupate)"]
+                    </p>
+                </td>
+                <td width="144">
+                    @dec_table2_row_r210c1;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r210c2;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r210c3;
+                </td>
+            </tr>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        220
+                    </p>
+                </td>
+                <td width="288">
+                    <p>
+                        ["Numărul de locuri-pat oferite pentru cazare (dacă nu au fost ocupate toate locurile
+                        (paturile), se va calcula analogic rd. 200)"]
+                    </p>
+                </td>
+                <td width="144">
+                    @dec_table2_row_r220c1;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r220c2;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r220c3;
+                </td>
+            </tr>
+            <tr>
+                <td width="48">
+                    <p align="center">
+                        230
+                    </p>
+                </td>
+                <td width="288">
+                    <p>
+                        ["Numărul de zile în care structura a fost deschisă"]
+                    </p>
+                </td>
+                <td width="144">
+                    @dec_table2_row_r230c1;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r230c2;
+                </td>
+                <td width="144">
+                    @dec_table2_row_r230c3;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<table>
+    <tr>
+        <td>
+            240 ["Numărul de personal ocupat cu activitatea de cazare turistică, inclusiv restaurant (bar, cafenea
+            etc.), în ultima zi lucrătoare a trimestrului raportat, total"]
+        </td>
+        <td>
+            @dec_table1_row_r240;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            250 ["din care, în restaurant (bar, cafenea etc.)"]
+        </td>
+        <td>
+            @dec_table1_row_r250;
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <p><strong>["Notă"]:["În cazul nefuncţionării structurii"]</strong> @dec_table_row_nota_in;
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>
+                (["indicaţi motivul şi perioada cînd se preconizează de a începe activitatea"])
+                @dec_table_row_nota_motiv;
+            </p>
+        </td>
+    </tr>
+</table>
