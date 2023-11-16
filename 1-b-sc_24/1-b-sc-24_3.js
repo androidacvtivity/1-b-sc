@@ -509,98 +509,98 @@ webform.validators.bsc1_24 = function (v, allowOverpass) {
             //     }
             // }
 
-            // if (var2001C3 > var2002C3) {
+            // // if (var2001C3 > var2002C3) {
+            // //     webform.errors.push({
+            // //         'fieldName': 'dec_table2_row_r2002c3',
+            // //         'weight': 503,
+            // //         'msg': Drupal.t('Cod eroare: 19-503. Rînd 2001 col.3 < sau egal rind 2002 col.3')
+            // //     });
+            // // }
+
+            // /************************/
+            // var var200C1 = 0;
+            // if (!isNaN(parseInt(values['dec_table2_row_r200c1']))) {
+            //     var200C1 = parseInt(values['dec_table2_row_r200c1']);
+            // }
+            // var var200C2 = 0;
+            // if (!isNaN(parseInt(values['dec_table2_row_r200c2']))) {
+            //     var200C2 = parseInt(values['dec_table2_row_r200c2']);
+            // }
+
+            // var var200C3 = 0;
+            // if (!isNaN(parseInt(values['dec_table2_row_r200c3']))) {
+            //     var200C3 = parseInt(values['dec_table2_row_r200c3']);
+            // }
+
+            // if (var200C1 > var220C1) {
             //     webform.errors.push({
-            //         'fieldName': 'dec_table2_row_r2002c3',
-            //         'weight': 503,
-            //         'msg': Drupal.t('Cod eroare: 19-503. Rînd 2001 col.3 < sau egal rind 2002 col.3')
+            //         'fieldName': 'dec_table2_row_r200c1',
+            //         'weight': 504,
+            //         'msg': Drupal.t('Cod eroare: 19-504. Rînd 200 col.1 < sau egal rind 220 col.1')
+            //     });
+            // }
+            // if (var200C2 > var220C2) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r200c2',
+            //         'weight': 505,
+            //         'msg': Drupal.t('Cod eroare: 19-505. Rînd 200 col.2 < sau egal rind 220 col.2')
+            //     });
+            // }
+            // if (var200C3 > var220C3) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r200c3',
+            //         'weight': 506,
+            //         'msg': Drupal.t('Cod eroare: 19-506. Rînd 200 col.3 < sau egal rind 220 col.3')
             //     });
             // }
 
-            /************************/
-            var var200C1 = 0;
-            if (!isNaN(parseInt(values['dec_table2_row_r200c1']))) {
-                var200C1 = parseInt(values['dec_table2_row_r200c1']);
-            }
-            var var200C2 = 0;
-            if (!isNaN(parseInt(values['dec_table2_row_r200c2']))) {
-                var200C2 = parseInt(values['dec_table2_row_r200c2']);
-            }
+            // if (var2001C1 < var200C1) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2001c1',
+            //         'weight': 410,
+            //         'msg': Drupal.t('Cod eroare: 19-410. Rînd 2001, col.1 > sau egal rînd 200, col.1', {})
+            //     });
+            // }
 
-            var var200C3 = 0;
-            if (!isNaN(parseInt(values['dec_table2_row_r200c3']))) {
-                var200C3 = parseInt(values['dec_table2_row_r200c3']);
-            }
+            // if (var2001C2 < var200C2) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2001c2',
+            //         'weight': 410,
+            //         'msg': Drupal.t('Cod eroare: 19-410. Rînd 2001, col.2 > sau egal rînd 200, col.2', {})
+            //     });
+            // }
 
-            if (var200C1 > var220C1) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r200c1',
-                    'weight': 504,
-                    'msg': Drupal.t('Cod eroare: 19-504. Rînd 200 col.1 < sau egal rind 220 col.1')
-                });
-            }
-            if (var200C2 > var220C2) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r200c2',
-                    'weight': 505,
-                    'msg': Drupal.t('Cod eroare: 19-505. Rînd 200 col.2 < sau egal rind 220 col.2')
-                });
-            }
-            if (var200C3 > var220C3) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r200c3',
-                    'weight': 506,
-                    'msg': Drupal.t('Cod eroare: 19-506. Rînd 200 col.3 < sau egal rind 220 col.3')
-                });
-            }
+            // if (var2001C3 < var200C3) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2001c3',
+            //         'weight': 410,
+            //         'msg': Drupal.t('Cod eroare: 19-410. Rînd 2001, col.3 > sau egal rînd 200, col.3', {})
+            //     });
+            // }
 
-            if (var2001C1 < var200C1) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2001c1',
-                    'weight': 410,
-                    'msg': Drupal.t('Cod eroare: 19-410. Rînd 2001, col.1 > sau egal rînd 200, col.1', {})
-                });
-            }
+            // /*19-411*/
+            // if (var2002C1 < var220C1) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2002c1',
+            //         'msg': Drupal.t('Cod eroare: 19-411. Rînd 2002, col.1 > sau egal rînd 220, col.1', {})
+            //     });
+            // }
 
-            if (var2001C2 < var200C2) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2001c2',
-                    'weight': 410,
-                    'msg': Drupal.t('Cod eroare: 19-410. Rînd 2001, col.2 > sau egal rînd 200, col.2', {})
-                });
-            }
+            // if (var2002C2 < var220C2) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2002c2',
+            //         'weight': 411,
+            //         'msg': Drupal.t('Cod eroare: 19-411. Rînd 2002, col.2 > sau egal rînd 220, col.2', {})
+            //     });
+            // }
 
-            if (var2001C3 < var200C3) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2001c3',
-                    'weight': 410,
-                    'msg': Drupal.t('Cod eroare: 19-410. Rînd 2001, col.3 > sau egal rînd 200, col.3', {})
-                });
-            }
-
-            /*19-411*/
-            if (var2002C1 < var220C1) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2002c1',
-                    'msg': Drupal.t('Cod eroare: 19-411. Rînd 2002, col.1 > sau egal rînd 220, col.1', {})
-                });
-            }
-
-            if (var2002C2 < var220C2) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2002c2',
-                    'weight': 411,
-                    'msg': Drupal.t('Cod eroare: 19-411. Rînd 2002, col.2 > sau egal rînd 220, col.2', {})
-                });
-            }
-
-            if (var2002C3 < var220C3) {
-                webform.errors.push({
-                    'fieldName': 'dec_table2_row_r2002c3',
-                    'weight': 411,
-                    'msg': Drupal.t('Cod eroare: 19-411. Rînd 2002, col.3 > sau egal rînd 220, col.3', {})
-                });
-            }
+            // if (var2002C3 < var220C3) {
+            //     webform.errors.push({
+            //         'fieldName': 'dec_table2_row_r2002c3',
+            //         'weight': 411,
+            //         'msg': Drupal.t('Cod eroare: 19-411. Rînd 2002, col.3 > sau egal rînd 220, col.3', {})
+            //     });
+            // }
 
             /*******************************************************************/
             var Col1_ = 0;
